@@ -1,0 +1,37 @@
+Using default tracefiles in ./traces/
+Measuring performance with gettimeofday().
+.............................
+Results for mm malloc:
+  valid  util   ops    secs     Kops  trace
+   yes    86%  100000  0.009775 10230 ./traces/alaska.rep
+ * yes    99%    4805  0.000441 10888 ./traces/amptjp.rep
+ * yes    83%    4162  0.000235 17726 ./traces/bash.rep
+ * yes    77%   57716  0.005701 10123 ./traces/boat.rep
+ * yes    99%    5032  0.000424 11857 ./traces/cccp.rep
+ * yes    76%   11991  0.000805 14892 ./traces/chrome.rep
+ * yes    99%   20000  0.000579 34536 ./traces/coalesce-big.rep
+   yes    66%   14400  0.000408 35329 ./traces/coalescing-bal.rep
+   yes   100%      15  0.000001 10714 ./traces/corners.rep
+ * yes   100%    5683  0.000560 10148 ./traces/cp-decl.rep
+ u yes    71%      --        --    -- ./traces/exhaust.rep
+ * yes    79%    8000  0.000501 15965 ./traces/firefox.rep
+   yes    85%   99804  0.026791  3725 ./traces/firefox-reddit.rep
+   yes    75%     118  0.000004 27442 ./traces/hostname.rep
+ * yes    93%   19405  0.000712 27254 ./traces/login.rep
+ * yes    63%     200  0.000011 17544 ./traces/lrucd.rep
+   yes    88%     372  0.000013 29062 ./traces/ls.rep
+   yes    34%      10  0.000001 14286 ./traces/malloc.rep
+   yes    28%      17  0.000001 15455 ./traces/malloc-free.rep
+ u yes   100%      --        --    -- ./traces/needle.rep
+ * yes    89%     200  0.000012 16529 ./traces/nlydf.rep
+   yes    86%    1494  0.000069 21527 ./traces/perl.rep
+ * yes    86%     200  0.000012 16260 ./traces/qyqyc.rep
+ * yes    96%    4800  0.003425  1402 ./traces/random.rep
+ * yes    95%    4800  0.003418  1405 ./traces/random2.rep
+ * yes    79%     147  0.000006 24098 ./traces/rm.rep
+ * yes    68%     200  0.000010 20000 ./traces/rulsr.rep
+ p yes     --    6495  0.010566   615 ./traces/seglist.rep
+   yes    89%      12  0.000002  5455 ./traces/short2.rep
+18 17     86%  153836  0.027419  5610
+
+Perf index = 50 (util) & 17 (thru) = 67/100
